@@ -1,0 +1,9 @@
+ .doctors-dashboard {
+  padding: 10px 10px 0;
+  font-family: Arial, sans-serif;
+  background: #131313;
+ }
+ .dashboard-cards {
+  display: flex;
+  gap: 10px;
+ }

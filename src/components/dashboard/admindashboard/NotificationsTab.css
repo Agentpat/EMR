@@ -1,0 +1,79 @@
+/* NotificationsTab.css */
+
+.notifications-tab {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+}
+
+.notifications-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.notifications-header p {
+  font-size: 1rem;
+  color: #bbb;
+  margin: 0;
+}
+.notifications-primary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.notifications-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #00c853;
+  color: #121212;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #00b046;
+}
+
+/* Layout for the three notification sections side-by-side */
+.notifications-tab > div {
+  flex: 1;
+}
+
+/* Primary row container for Unread, Today, Earlier */
+.notifications-tab > .unread-section,
+.notifications-tab > .today-section,
+.notifications-tab > .earlier-section {
+  flex: 1;
+  min-width: 280px;
+  margin-top: 1rem;
+}
+

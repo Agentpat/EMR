@@ -1,0 +1,44 @@
+/* src/components/dashboard/OverviewChart.css */
+
+.overview-chart-container {
+  background-color: #1a1a1a;
+  /* padding: 2rem; */
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  height: 450px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.chart-header {
+  margin-bottom: 1.5rem;
+  padding: 20px;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.chart-description {
+  font-size: 0.95rem;
+  color: #aaaaaa;
+}
+
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #222 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+  font-size: 0.85rem;
+  padding: 8px !important;
+}
+
+.recharts-default-legend {
+  color: #fff !important;
+  font-size: 0.9rem;
+}

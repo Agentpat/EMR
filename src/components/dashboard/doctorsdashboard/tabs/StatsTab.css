@@ -1,0 +1,39 @@
+.stats-tab {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.tab-bar {
+  display: flex;
+  width: fit-content;
+  background-color: #555;
+  border: 0.5px solid #2a2a2ad2;
+  border-radius: 4px;
+}
+
+.tab {
+  padding: 10px 16px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: #d4d4d4;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.tab:hover {
+  color: #000;
+}
+
+.tab.active {
+  padding: 4px 12px;
+  border-radius: 4px;
+  background-color: #000;
+  color: #cecece;
+}
+
+.tab-content {
+  padding-top: 10px;
+}

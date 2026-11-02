@@ -1,0 +1,79 @@
+/* Container */
+.dashboard-tabs {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+  margin-top: 20px;
+}
+
+/* Nav bar */
+.tab-nav {
+  display: flex;
+  width: fit-content;
+  background-color: rgb(36, 36, 36);
+  padding: 2px;
+  border-radius: 8px;
+  gap: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Tab button */
+.tab-item {
+  background: none;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 1.1rem;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.tab-item:hover {
+  color: #ccc;
+}
+
+/* Active tab */
+.tab-item.active {
+  background-color: rgb(17, 17, 17);
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* Content container */
+.tab-content {
+  min-height: 400px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Fade animations */
+.tab-content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab-content.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Optional: styling for inner content */
+.tab-content-inner {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.tab-content-inner h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.tab-content-inner p {
+  color: #ccc;
+  line-height: 1.5;
+}

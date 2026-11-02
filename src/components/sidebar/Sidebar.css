@@ -1,0 +1,139 @@
+/* SIDEBAR CONTAINER */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  padding: 1rem 0; /* Always present to avoid jump */
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Opened sidebar */
+.sidebar.open {
+  width: 280px;
+}
+
+/* Scrollbar Styling (optional) */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 4px;
+}
+
+/* LOGO */
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding-left: 24px;
+  margin-bottom: 24px;
+  user-select: none;
+}
+
+/* NAV CONTAINER */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+/* WRAPPER FOR EACH ITEM */
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BUTTON-LIKE MAIN LINK */
+.sidebar-link {
+  background: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  padding: 11px 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus {
+  background-color: #222;
+  outline: none;
+}
+
+/* ICON (left of label) */
+.icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ARROW ICON (right side) */
+.arrow-icon {
+  margin-left: auto;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* ROTATE ARROW WHEN ACTIVE */
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* SUBMENU CONTAINER */
+.submenu-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #111;
+  margin: 0 6px;
+  border-left: 2px solid #444;
+  border-radius: 4px;
+}
+
+/* OPENED SUBMENU */
+.submenu-wrapper.open {
+  max-height: 500px; /* adjust or control dynamically */
+}
+
+/* LINKS INSIDE SUBMENU */
+.submenu-wrapper a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 24px;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.submenu-wrapper a:hover,
+.submenu-wrapper a:focus {
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  user-select: none;
+}

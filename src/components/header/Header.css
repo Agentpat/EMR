@@ -1,0 +1,73 @@
+/* =========================
+   Fixed EMR Dashboard Header
+========================= */
+.emr-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+  padding: 0 20px;
+
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #2e2e2e;
+  color: white;
+  transition: left 0.3s ease;
+}
+
+/* If sidebar is open, shift header */
+.emr-header.shifted {
+  left: 280px; /* match sidebar width */
+}
+
+/* =========================
+   Buttons (Menu & Notification)
+========================= */
+.menu-btn,
+.notification-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.menu-btn:hover,
+.notification-btn:hover {
+  color: #00bcd4;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* =========================
+   Right Section (Icons + Avatar)
+========================= */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* =========================
+   Profile Picture
+========================= */
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+  transition: border-color 0.2s ease;
+}
+
+.profile-pic:hover {
+  border-color: #00bcd4;
+}

@@ -1,0 +1,76 @@
+.today-section {
+  flex: 1;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE 10+ */
+}
+
+.today-section::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Edge */
+}
+
+.today-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.today-header h2 {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.today-badge {
+  background-color: #2962ff;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.today-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.today-card {
+  background-color: #1a1a1a;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #2962ff;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.today-card:hover {
+  background-color: #222;
+}
+
+.today-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #eee;
+  margin-bottom: 0.3rem;
+}
+
+.today-message {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 0.4rem;
+}
+
+.today-time {
+  font-size: 0.8rem;
+  color: #888;
+}

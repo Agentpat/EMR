@@ -1,0 +1,56 @@
+.patient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #000000;
+  border-radius: 12px;
+  border: 0.1px solid rgb(36, 36, 36);
+  box-shadow: 0 2px 8px rgba(156, 156, 156, 0.05);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.patient-greeting h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #a7a7a7;
+}
+
+.patient-greeting p {
+  margin: 0.25rem 0 0;
+  color: #666;
+}
+
+.patient-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.message-btn {
+  background-color: #e1f0ff;
+  color: #007bff;
+}
+
+.appointment-btn {
+  background-color: #d8f5e2;
+  color: #28a745;
+}
+
+.action-btn .icon {
+  font-size: 16px;
+}

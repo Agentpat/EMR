@@ -1,0 +1,62 @@
+.reports-tab {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+}
+
+.reports-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.reports-header p {
+  margin: 0;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.btn.generate-btn {
+  background-color: #00c853;
+  color: #121212;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.generate-btn:hover {
+  background-color: #00b046;
+}
+
+/* Row container for the 3 report cards */
+.reports-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Responsive: stack cards on smaller screens */
+@media (max-width: 900px) {
+  .reports-row {
+    flex-direction: column;
+  }
+}

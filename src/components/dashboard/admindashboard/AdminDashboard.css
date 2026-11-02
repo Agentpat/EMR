@@ -1,0 +1,117 @@
+.admin-dashboard {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background: #131313;
+}
+
+.header-greeting {
+  margin-bottom: 2rem;
+}
+
+.header-controls {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.date-export {
+  max-width: 200px;
+}
+
+.date-export p {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.date-export button {
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+.dashboard-kpis {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.kpi-card {
+  background: #000000;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  flex: 1;
+  text-align: left;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.kpi-change {
+  color: #4caf50;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.kpi-value {
+  font-size: 1.6rem;
+  margin: 0 0 0.2rem 0;
+}
+
+.kpi-title {
+  color: #555;
+  margin: 0;
+}
+
+.overview-chart {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.chart-placeholder {
+  height: 160px;
+  background: #e5e7ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: #555;
+  margin: 1rem 0;
+}
+
+.months-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
+.recent-appointments ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+  align-items: center;
+}
+
+.more-btn {
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.view-all-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #3f51b5;
+  cursor: pointer;
+  text-decoration: underline;
+}

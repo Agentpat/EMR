@@ -1,0 +1,81 @@
+.patient-satisfaction {
+  margin-top: 10px;
+  background-color: #000; /* pure black */
+  padding: 16px; /* optional padding */
+  border-radius: 8px; /* soften edges */
+  width: 100%;
+}
+
+.chart-title {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.chart-subtitle {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+.satisfaction-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.satisfaction-item {
+  background-color: transparent; /* clear background */
+  margin-bottom: 20px; /* space between items */
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 4px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.percent-text {
+  font-weight: 600;
+  color: #fff;
+}
+
+.progress-bar {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  height: 12px; /* slightly taller for visibility */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00c853;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  user-select: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); /* subtle text shadow for readability */
+}
+
+.bar-label {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,19 @@
+.doctor-header-greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.doctor-header-greeting h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.doctor-header-greeting p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin: 0;
+}

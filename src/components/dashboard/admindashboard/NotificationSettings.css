@@ -1,0 +1,117 @@
+.notification-settings {
+  min-width: 300px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.7);
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notification-settings h1 {
+  font-size: 1.6rem; /* reduced */
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.notification-settings p {
+  font-size: 0.9rem; /* reduced */
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.settings-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.settings-section {
+  flex: 1;
+}
+
+.categories-section h2,
+.delivery-section h2 {
+  font-size: 1.2rem; /* reduced */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+  color: #fff;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem; /* slightly tighter */
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #222;
+}
+
+.setting-text h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem; /* reduced */
+}
+
+.setting-text p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.8rem; /* reduced */
+  color: #bbb;
+}
+
+/* Toggle Switch Style */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px; /* smaller */
+  height: 22px; /* smaller */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #444;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Checkbox checked */
+input[type="checkbox"]:checked + .slider {
+  background-color: #00c853;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Add focus styles for accessibility */
+input[type="checkbox"]:focus + .slider {
+  box-shadow: 0 0 2px 3px rgba(0, 200, 83, 0.5);
+}

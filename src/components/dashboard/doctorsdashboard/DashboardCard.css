@@ -1,0 +1,59 @@
+/* src/components/dashboard/doctorsdashboard/DashboardCard.css */
+.dashboard-card {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(104, 104, 104, 0.08);
+  flex: 1;
+  gap: 16px;
+  min-width: 200px;
+
+  transition: 0.3s ease;
+}
+
+.dashboard-card .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.dashboard-card .icon {
+  font-size: 22px;
+  color: #4a90e2;
+}
+
+.dashboard-card .content h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dashboard-card .highlight {
+  color: #e67e22;
+  font-size: 12px;
+  margin: 4px 0;
+  font-weight: 500;
+}
+
+.dashboard-card .content h2 {
+  font-size: 20px;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.dashboard-card .description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.dashboard-card .action-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0;
+}

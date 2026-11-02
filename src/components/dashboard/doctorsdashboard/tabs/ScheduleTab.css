@@ -1,0 +1,9 @@
+.schedule-tab {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.schedule-tab > * {
+  flex: 1;
+}

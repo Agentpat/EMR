@@ -1,0 +1,83 @@
+.upcoming-appointments {
+  background-color: #000000;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
+  color: #fff;
+}
+
+.upcoming-appointments h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.upcoming-appointments p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.upcoming-card {
+  background-color: #000000;
+  padding: 1rem;
+  border: 0.5px solid #2c2c2c;
+  border-radius: 6px;
+  transition: background 0.2s ease-in;
+}
+
+.upcoming-card:hover {
+  background-color: #171717;
+}
+
+.upcoming-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.upcoming-info p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.status-type {
+  display: flex;
+  gap: 10px;
+}
+.status {
+  display: inline-block;
+ 
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 2px 8px;
+  border-radius: 18px;
+}
+
+.status.confirmed {
+  background-color: #005f2f;
+  color: #c8facc;
+}
+
+.status.pending {
+  background-color: #663c00;
+  color: #ffd9b3;
+}
+
+.type {
+  display: inline-block;
+  background-color: #2c2c2c;
+  padding: 2px 8px;
+  text-align: center;
+  margin: 0;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #e8e8e8;
+}

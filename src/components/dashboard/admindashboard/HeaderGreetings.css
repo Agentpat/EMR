@@ -1,0 +1,98 @@
+/* src/components/dashboard/HeaderGreeting.css */
+
+.header-greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-msg {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #cbcbcb;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.date-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  color: #acacac;
+  transition: background-color 0.2s ease;
+}
+
+.date-input:hover,
+.date-input:focus {
+  background-color: #303030;
+  outline: none;
+}
+
+.calendar-icon {
+  font-size: 1.2rem;
+  color: #3f51b5;
+}
+
+.export-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(27, 27, 27);
+  color: #3f51b5;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.export-button:hover,
+.export-button:focus {
+  background-color: #3b3b3b;
+  outline: none;
+}
+
+.download-icon {
+  font-size: 1.2rem;
+}
+
+.calendar-dropdown {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+}
