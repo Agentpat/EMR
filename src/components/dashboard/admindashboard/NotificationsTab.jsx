@@ -40,30 +40,50 @@ const NotificationsTab = () => {
   const [notifications, setNotifications] = useState(initialNotifications);
 
   const markAllAsRead = () => {
-    setNotifications((prev) => prev.map((n) => ({ ...n, read: true })));
+    setNotifications((prev) =>
+      prev.map((notification) => ({
+        ...notification,
+        read: true,
+      }))
+    );
   };
 
-  return (
-    <section className="notifications-tab">
-      <header className="notifications-header">
-        <div>
-          <h1>Notifications</h1>
-          <p>Stay updated with important alerts and messages</p>
-        </div>
-        <div className="notifications-actions">
-          <button className="btn" onClick={markAllAsRead}>
-            Mark All as Read
-          </button>
-          <button className="btn">Filter</button>
-        </div>
-      </header>
-      <div className="notifications-primary">
-        <UnreadNotifications />
-        <TodayNotifications />
-        <EarlierNotifications />
-      </div>
-      <NotificationSettings/>
-    </section>
+  const unreadNotifications = notifications.filter(
+    (notification) => !notification.read
+  );
+
+  const todayNotifications = notifications.filter(
+    (notification) => notification.read
+  );
+
+  return (<section className="notifications-tab"> <header className="notifications-header"> <div> <h1>Notifications</h1> <p>Stay updated with important alerts and messages</p> </div>
+
+
+    <div className="notifications-actions">
+      <button
+        className="btn"
+        onClick={markAllAsRead}
+        disabled={unreadNotifications.length === 0}
+      >
+        Mark All as Read
+      </button>
+
+      <button className="btn">Filter</button>
+    </div>
+  </header>
+
+    <div className="notifications-primary">
+      <UnreadNotifications notifications={unreadNotifications} />
+
+      <TodayNotifications notifications={todayNotifications} />
+
+      <EarlierNotifications notifications={[]} />
+    </div>
+
+    <NotificationSettings />
+  </section>
+
+
   );
 };
 
